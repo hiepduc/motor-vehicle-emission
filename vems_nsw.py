@@ -344,6 +344,13 @@ ds_gmr_evaps = dsx0x1x2evaps.sel(lat=slice(min_lat,max_lat), lon=slice(min_lon, 
 dsx2cold = xarray.open_dataset("coldx2y0_x2y1.nc")
 dsx2_gmr_cold = dsx2cold.sel(lat=slice(min_lat,max_lat), lon=slice(min_lon, max_lon))
 
+# Save netcdf files of GMR hot, cold, evap, nepm emission
+ds_gmr_hot.to_netcdf("hot2_gmr_x0x1x2.nc")
+ds_gmr_cold.to_netcdf("cold_gmr_x0x1x2.nc")
+ds_gmr_nepm.to_netcdf("nepm_gmr_x0x1x2.nc")
+ds_gmr_evaps.to_netcdf("evaps_gmr_x0x1x2.nc")
+
+# Plot the emission of some species i the GMR
 ds_gmr_hot.NO2[12,:,:].plot()
 plt.show()
 ds_gmr_hot.PM10[12,:,:].plot()

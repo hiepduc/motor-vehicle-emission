@@ -20,8 +20,10 @@ import os
 
 # First read the netCDF CB6 EDMS data as provided by speciation tool
 #
-sptCB6dir = '/mnt/scratch_lustre/ar_soup_scratch/Speciation_tools/EDMS_Extraction/6-on-road_KgHr/petrol-exhaust/CB6R3_AE7/netcdf_output_grid/'
-sptCB6dir2 = '/mnt/scratch_lustre/ar_soup_scratch/Speciation_tools/EDMS_Extraction/6-on-road_KgHr/diesel-exhaust/CB6R3_AE7/netcdf_output_grid/'
+#sptCB6dir = '/mnt/scratch_lustre/ar_soup_scratch/Speciation_tools/EDMS_Extraction/6-on-road_KgHr/petrol-exhaust/CB6R3_AE7/netcdf_output_grid/'
+#sptCB6dir2 = '/mnt/scratch_lustre/ar_soup_scratch/Speciation_tools/EDMS_Extraction/6-on-road_KgHr/diesel-exhaust/CB6R3_AE7/netcdf_output_grid/'
+sptCB6dir = '/mnt/climate/cas/ar_data/EDMS/2013/EDMS_Extraction/6-on-road_KgHr/petrol-exhaust/CB6R3_AE7/netcdf_output_grid/'
+sptCB6dir2 = '/mnt/climate/cas/ar_data/EDMS/2013/EDMS_Extraction/6-on-road_KgHr/diesel-exhaust/CB6R3_AE7/netcdf_output_grid/'
 #petrolexhwday = sptCB6dir + 'petrol-exhaust_Lump_pd_CB6R3_AE7_Jan_WeekDayAmount.nc4'
 petrolexhwday = sptCB6dir + 'petrol-exhaust_Lump_pd_CB6R3_AE7_Jan_WeekEndAmount.nc4'
 petrolid = Dataset(petrolexhwday, 'r')
